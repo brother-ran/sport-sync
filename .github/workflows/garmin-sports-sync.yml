@@ -3,7 +3,7 @@ name: garmin-sports-sync
 on:
   workflow_dispatch:
   schedule:
-    - cron: '30 * * * *'
+    - cron: '0 */2 * * *'
 env:
   GITHUB_NAME: brother-ran
   GITHUB_EMAIL: ${{ secrets.GH_EMAIL }}
